@@ -1,6 +1,6 @@
 alert('Selamat datang di game tebak angka \n kamu diminta untuk menebak angka 1-3 \n dan kamu akan bermain dalam 5 ronde \n player yang berhasil mengumpulkan tebakan terbanyak akan menang \n SELAMAT BERMAIN!!!')
-let player1 = prompt('Player 1 : Masukkan angka 0-3')
-let player2 = prompt('Player 2 : Masukkan angka 0-3')
+let player1 
+let player2
 
 function checkEmpty() {
     
@@ -14,7 +14,7 @@ function checkEmpty() {
         alert('Harus angka 0-3')
     }
 }
-checkEmpty();
+// checkEmpty();
 
 let scorePlayer1 = 0;
 let scorePlayer2 = 0;
@@ -32,12 +32,12 @@ function hasil () {
     }
     alert('Nilai yang dicari = ' + com + '\n------------------' +'\nscore player 1 = ' + scorePlayer1 +'\nscore player 2 = ' + scorePlayer2)
 }
-hasil();
+// hasil();
 
-let ulang = 4;
-for(let i = 0; i <= ulang; i++) {
-    alert(player1)
-    alert(player2)
+
+for(let i = 1; i <= 5; i++) {
+    player1 = prompt('Player 1 : Masukkan angka 0-3')
+    player2 = prompt('Player 2 : Masukkan angka 0-3')
     checkEmpty();
     hasil();
 }
